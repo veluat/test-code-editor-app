@@ -22,24 +22,24 @@
 
 1. **Склонируйте репозиторий**:
 
-    ```bash
-    git clone https://github.com/veluat/test-code-editor.git
-    cd test-code-editor  # Замените на фактическое имя папки, если оно отличается
-    ```
+   ```bash
+   git clone https://github.com/veluat/test-code-editor.git
+   cd test-code-editor  # Замените на фактическое имя папки, если оно отличается
+   ```
 
 2. **Установите зависимости**:
 
-    ```bash
-    pnpm install
-    ```
+   ```bash
+   pnpm install
+   ```
 
 ### Запуск
 
 1. **Запустите приложение**:
 
-    ```bash
-    pnpm run dev
-    ```
+   ```bash
+   pnpm run dev
+   ```
 
    Откройте браузер и перейдите по адресу: `http://localhost:5173`
 

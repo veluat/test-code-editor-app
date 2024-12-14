@@ -4,7 +4,7 @@ import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/mode-python';
 import 'ace-builds/src-noconflict/theme-terminal';
 import { Output } from '../output/Output.jsx';
-import styles from './CodeEditor.module.scss';
+import style from './CodeEditor.module.scss';
 
 export const CodeEditor = () => {
   const [code, setCode] = useState('console.log("Привет, мир!")');
@@ -37,36 +37,38 @@ export const CodeEditor = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={style.container}>
       <select
-        className={styles.languageSelector}
+        className={style.languageSelector}
         value={language}
         onChange={(e) => {
           setLanguage(e.target.value);
           setCode('');
         }}
       >
-        <option value='javascript'>JavaScript</option>
-        <option value='python'>Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
       </select>
 
       <AceEditor
         mode={language}
-        theme='terminal'
+        theme="terminal"
         value={code}
         fontSize={16}
         onChange={setCode}
-        name='code_editor'
+        name="code_editor"
         editorProps={{ $blockScrolling: true }}
-        width='100%'
-        height='400px'
+        width="100%"
+        height="400px"
         setOptions={{
           showLineNumbers: true,
           tabSize: 2,
         }}
       />
 
-      <button className={styles.runButton} onClick={handleRunCode}>Run</button>
+      <button className={style.runButton} onClick={handleRunCode}>
+        Run
+      </button>
 
       <Output output={output} error={error} />
     </div>
