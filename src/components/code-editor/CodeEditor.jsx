@@ -24,7 +24,7 @@ export const CodeEditor = () => {
   };
 
   const runCode = async (code) => {
-    return fetch('http://localhost:3000/run', {
+    return fetch('/api/run', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

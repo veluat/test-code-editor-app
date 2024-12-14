@@ -7,14 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "server": "node src/server/server.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "ace-builds": "^1.36.5",
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
+    "miragejs": "^0.1.48",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-ace": "^13.0.0",
@@ -23,8 +20,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.15.0",
     "eslint-plugin-react": "^7.37.2",
