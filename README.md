@@ -19,8 +19,8 @@
 1. **Склонируйте репозиторий**:
 
     ```bash
-   git clone https://github.com/veluat/test-code-editor.git
-   cd test-code-editor
+   git clone https://github.com/veluat/test-code-editor-app.git
+   cd test-code-editor-app
     ```
 
 2. **Установите зависимости**:
